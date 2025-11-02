@@ -6,25 +6,15 @@ A clean, minimal Yocto Project layer specifically designed for Radxa Rock 5B+ (R
 
 This layer provides a streamlined development environment for the Rock 5B+ board, focusing on essential functionality while maintaining a clean, extensible structure for incremental feature development.
 
-## Features
+## Current Capabilities
 
-### Current Capabilities
-
-- ✅ Rock 5B+ machine configuration
-- ✅ Base image (core-image-rock5b)
-- ✅ GUI image (core-image-rock5b-gui)
-- ✅ Essential development tools
-- ✅ Custom applications (hello, calculator, libmath)
-- ✅ NetworkManager integration
-- ✅ Rockchip kernel support
-
-### Removed Components
-
-- ❌ BeagleBone-specific configurations
-- ❌ MQTT applications (mosquitto, mqttblack)
-- ❌ BeagleBone WiFi modules (tlwn725n)
-- ❌ LCD modules (ili9341)
-- ❌ BeagleBone device trees and patches
+- Rock 5B+ machine configuration
+- Base image (core-image-rock5b)
+- GUI image (core-image-rock5b-gui)
+- Essential development tools
+- Custom applications (hello, calculator, libmath)
+- NetworkManager integration
+- Rockchip kernel support
 
 ## Layer Structure
 
