@@ -1,0 +1,36 @@
+--- a/helloworld.c	2025-05-13 10:23:15.910859677 +0700
++++ b/advanced_helloworld.c	2025-05-13 10:50:45.399726956 +0700
+@@ -1,7 +1,30 @@
++/* This is an advanced version extended from
++ * helloworld.c in the same directory */
+ #include <stdio.h>
++#include <string.h>
++
++// Definitions
++#define MESSAGE "Hello, world!"
++#define MAX_LEN 50
++
++void relationship(char *, char *);
+ 
+ int main(void)
+ {
+-    printf("Hello world!\n");
++    char greeting[MAX_LEN] = MESSAGE;
++    char reply[MAX_LEN];
++
++    relationship(greeting, reply);
+     return 0;
+-}
+\ No newline at end of file
++}
++
++void relationship(char *chat1, char *chat2)
++{
++    printf("Before strcpy: %s\n", chat1);
++    strcpy(chat1, "This is not a greeting anymore!");
++    printf("After strcpy: %s\n", chat1);
++    printf("-------------\n");
++    printf("Replying...\n");
++    memcpy(chat2, chat1, strlen(chat1) + 1);
++    printf("%s\n", chat2);
++}

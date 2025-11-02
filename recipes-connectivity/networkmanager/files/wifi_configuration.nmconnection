@@ -1,0 +1,21 @@
+[connection]
+interface-name=wlan0
+id=LE HAU HOME 3
+type=wifi
+autoconnect=true
+
+[wifi]
+ssid=LE HAU HOME 3
+mode=infrastructure
+
+[wifi-security]
+key-mgmt=wpa-psk
+psk=lehau6868
+
+[ipv4]
+method=auto
+dns=8.8.8.8;8.8.4.4;
+ignore-auto-dns=true
+
+[ipv6]
+method=ignore
