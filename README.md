@@ -67,7 +67,7 @@ GUI-capable image based on core-image-rock5b:
 
 ```bash
 # Source the environment
-cd /home/strongfood/YoctoProjects
+cd $HOME/YoctoProjects
 source poky/oe-init-build-env build-rockchip
 
 # Build base image
